@@ -22,47 +22,19 @@ public class GuiMain {
 		//Declaration of Frames and panels
 		JFrame frame = new JFrame();
 		JTabbedPane pane = new JTabbedPane();
-		JPanel addMembers = new JPanel();
+		
 		JPanel viewMembers = new JPanel();
 		JPanel editMembers = new JPanel();
 		JPanel deleteMembers = new JPanel();
 		
-		
+		AddMember test = new AddMember();
 		
 		//Add Members
 			
-		JTabbedPane addMembersPane = new JTabbedPane();
-		JPanel personalPanel = new JPanel(new GridLayout(0,1));
-		JPanel paymentPanel = new JPanel(new GridLayout(0,1));
-		//Personal
-		JPanel buttonPanel = new JPanel();
 		
-		JLabel jobAssignmentLabel = new JLabel("Job Assignment");
-		JLabel sleepingLocationLabel = new JLabel ("Sleeping Location");
-		JLabel healthFormLabel = new JLabel ("Health Form");
-		JLabel verifyInfo = new JLabel ("Please verify your information");
-		JLabel dateOfBirthLabel = new JLabel("DOB");
-		JLabel emailAddressLabel = new JLabel("Email Address");
-		JLabel boyScoutIDLabel = new JLabel("BSA ID");
-		JLabel unitTypeLabel = new JLabel("Unit Type");
-		JLabel unitNumberLabel = new JLabel("Unit Number");
+		AddMember();
 		
 		
-		JComboBox jobAssignmentBox = new JComboBox();
-		JComboBox sleepingLocationBox = new JComboBox();
-		JComboBox healthFormBox = new JComboBox();
-		
-		JTextField dateOfBirthField = new JTextField();
-		JTextField emailAddressField = new JTextField();
-		JTextField boyScoutIDField	= new JTextField();
-		JTextField unitTypeField = new JTextField();
-		JTextField unitNumberField = new JTextField();
-		
-		JButton acceptButton = new JButton("Accept");
-		JButton clearButton = new JButton("Clear");
-		
-		
-		personalPanel.add(jobAssignmentLabel);
 		personalPanel.add(jobAssignmentBox);
 		
 		personalPanel.add(sleepingLocationLabel);
@@ -139,10 +111,10 @@ public class GuiMain {
 		
 		
 		//Edit Members
-		JFrame searchResults = new JFrame();
+		final JFrame searchResults = new JFrame();
 		JPanel buttonPanel2 = new JPanel();
 		JLabel infoPrompt = new JLabel("Please enter a name to search");
-		JTextField infoPromptField = new JTextField();
+		final JTextField infoPromptField = new JTextField();
 		JButton goButton = new JButton("Go");
 		JButton clearButton2 = new JButton("Clear");
 		JPanel searchResultsPanel = new JPanel(new GridLayout (0,1));
