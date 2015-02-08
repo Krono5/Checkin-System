@@ -27,66 +27,8 @@ public class GuiMain {
 		JPanel editMembers = new JPanel();
 		JPanel deleteMembers = new JPanel();
 		
-		AddMember test = new AddMember();
-		
-		//Add Members
-			
-		
-		AddMember();
 		
 		
-		personalPanel.add(jobAssignmentBox);
-		
-		personalPanel.add(sleepingLocationLabel);
-		personalPanel.add(sleepingLocationBox);
-		
-		personalPanel.add(healthFormLabel);
-		personalPanel.add(healthFormBox);
-		
-		personalPanel.add(verifyInfo);
-		personalPanel.add(dateOfBirthLabel);
-		personalPanel.add(dateOfBirthField);
-		
-		personalPanel.add(emailAddressLabel);
-		personalPanel.add(emailAddressField);
-		
-		personalPanel.add(boyScoutIDLabel);
-		personalPanel.add(boyScoutIDField);
-		
-		personalPanel.add(unitTypeLabel);
-		personalPanel.add(unitTypeField);
-		
-		personalPanel.add(unitNumberLabel);
-		personalPanel.add(unitNumberField);
-		
-		personalPanel.add(buttonPanel);
-		buttonPanel.add(acceptButton);
-		buttonPanel.add(clearButton);
-		
-		//Button action assignments
-		acceptButton.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				//TODO Change output function
-				System.out.println("Test1");
-				
-			}
-		});
-		clearButton.addActionListener(new ActionListener() {
-			
-			@Override
-			public void actionPerformed(ActionEvent e) {
-			
-				dateOfBirthField.setText("");
-				emailAddressField.setText("");
-				boyScoutIDField.setText("");
-				unitNumberField.setText("");
-				unitTypeField.setText("");
-				
-				
-			}
-		});
 		
 		
 		//Payment
@@ -111,10 +53,10 @@ public class GuiMain {
 		
 		
 		//Edit Members
-		final JFrame searchResults = new JFrame();
+		JFrame searchResults = new JFrame();
 		JPanel buttonPanel2 = new JPanel();
 		JLabel infoPrompt = new JLabel("Please enter a name to search");
-		final JTextField infoPromptField = new JTextField();
+		JTextField infoPromptField = new JTextField();
 		JButton goButton = new JButton("Go");
 		JButton clearButton2 = new JButton("Clear");
 		JPanel searchResultsPanel = new JPanel(new GridLayout (0,1));
