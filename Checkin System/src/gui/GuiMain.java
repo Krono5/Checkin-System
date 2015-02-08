@@ -113,7 +113,7 @@ public class GuiMain {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 
-				Member inputtedMember = new Member();
+				Member inputtedMember = new Member(nameField.getText(), dateOfBirthField.getText(), oAIDField.getText(), boyScoutIDField.getText(), emailAddressField.getText(), unitTypeField.getText(), unitNumberField.getText(), healthFormBox.getSelectedItem(), jobAssignmentBox.getSelectedItem(), sleepingLocationBox.getSelectedItem());
 				
 			}
 		});
