@@ -76,7 +76,7 @@ public class GuiMain {
 		personalPanel.add(verifyInfo);
 		
 		personalPanel.add(nameLabel);
-		personalPanel.add(nameField);
+//		personalPanel.add(nameField);
 		
 		personalPanel.add(dateOfBirthLabel);
 		personalPanel.add(dateOfBirthField);
@@ -94,7 +94,7 @@ public class GuiMain {
 		personalPanel.add(unitNumberField);
 		
 		personalPanel.add(oAIDLabel);
-		personalPanel.add(oAIDField);
+//		personalPanel.add(oAIDField);
 		
 		
 		personalPanel.add(buttonPanel);
@@ -107,7 +107,7 @@ public class GuiMain {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 
-				Member inputtedMember = new Member(nameField.getText(), dateOfBirthField.getText(), oAIDField.getText(), boyScoutIDField.getText(), emailAddressField.getText(), unitTypeField.getText(), unitNumberField.getText(), healthFormBox.getSelectedItem(), jobAssignmentBox.getSelectedItem(), sleepingLocationBox.getSelectedItem());
+//				Member inputtedMember = new Member(nameField.getText(), dateOfBirthField.getText(), oAIDField.getText(), boyScoutIDField.getText(), emailAddressField.getText(), unitTypeField.getText(), unitNumberField.getText(), healthFormBox.getSelectedItem(), jobAssignmentBox.getSelectedItem(), sleepingLocationBox.getSelectedItem());
 				
 			}
 		});
