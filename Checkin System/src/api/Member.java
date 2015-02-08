@@ -7,6 +7,21 @@ private String memberName;
 private Date dateOfBirth;
 private Integer oAID;
 private Integer bSAID;
+
+public Member(){
+	this.memberName = null;
+	this.dateOfBirth = null;
+	this.oAID = null;
+	this.bSAID = null;
+}
+
+public Member(String memberName, Date dateOfBirth, Integer oAID, Integer bSAID){
+	memberName = this.memberName;
+	dateOfBirth = this.dateOfBirth;
+	oAID = this.oAID;
+	bSAID = this.bSAID;
+}
+
 public String getMemberName() {
 	return memberName;
 }
