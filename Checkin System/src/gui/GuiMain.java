@@ -1,19 +1,11 @@
 package gui;
 
-public class GuiMain {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}package checkInPck;
-
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.awt.LayoutManager;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
 import javax.swing.JButton;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
@@ -23,7 +15,9 @@ import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 
-public class HorseshoeCheckin {
+public class GuiMain {
+
+
 	public static void main (String [] args){
 		//Declaration of Frames and panels
 		JFrame frame = new JFrame();
@@ -247,7 +241,4 @@ public class HorseshoeCheckin {
 		frame.setVisible(true);
 		
 	}
-}
-
-
 }
