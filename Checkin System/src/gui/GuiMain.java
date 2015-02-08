@@ -46,6 +46,8 @@ public class GuiMain {
 		JLabel boyScoutIDLabel = new JLabel("BSA ID");
 		JLabel unitTypeLabel = new JLabel("Unit Type");
 		JLabel unitNumberLabel = new JLabel("Unit Number");
+		JLabel nameLabel = new JLabel("Name");
+		JLabel oAIDLabel = new JLabel("Order of the Arrow ID");
 		
 		
 		JComboBox jobAssignmentBox = new JComboBox();
@@ -72,6 +74,10 @@ public class GuiMain {
 		personalPanel.add(healthFormBox);
 		
 		personalPanel.add(verifyInfo);
+		
+		personalPanel.add(nameLabel);
+		personalPanel.add(nameField);
+		
 		personalPanel.add(dateOfBirthLabel);
 		personalPanel.add(dateOfBirthField);
 		
@@ -87,6 +93,10 @@ public class GuiMain {
 		personalPanel.add(unitNumberLabel);
 		personalPanel.add(unitNumberField);
 		
+		personalPanel.add(oAIDLabel);
+		personalPanel.add(oAIDField);
+		
+		
 		personalPanel.add(buttonPanel);
 		buttonPanel.add(acceptButton);
 		buttonPanel.add(clearButton);
@@ -96,8 +106,8 @@ public class GuiMain {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//TODO Change output function
-				System.out.println("Test1");
+
+				Member inputtedMember = new Member(nameField.getText(), dateOfBirthField.getText(), oAIDField.getText(), boyScoutIDField.getText(), emailAddressField.getText(), unitTypeField.getText(), unitNumberField.getText(), healthFormBox.getSelectedItem(), jobAssignmentBox.getSelectedItem(), sleepingLocationBox.getSelectedItem());
 				
 			}
 		});
