@@ -225,7 +225,7 @@ public class GuiMain {
 		searchResultsPanel.add(unitNumberLabel2);
 		searchResultsPanel.add(unitNumberField2);
 		
-		searchResults.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		searchResults.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		
 		pane.addTab("Add Members", addMembersPane);
 		pane.addTab("View Members", viewMembers);
