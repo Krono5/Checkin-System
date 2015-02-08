@@ -52,11 +52,11 @@ public class GuiMain {
 		JComboBox sleepingLocationBox = new JComboBox();
 		JComboBox healthFormBox = new JComboBox();
 		
-		JTextField dateOfBirthField = new JTextField();
-		JTextField emailAddressField = new JTextField();
-		JTextField boyScoutIDField	= new JTextField();
-		JTextField unitTypeField = new JTextField();
-		JTextField unitNumberField = new JTextField();
+		final JTextField dateOfBirthField = new JTextField();
+		final JTextField emailAddressField = new JTextField();
+		final JTextField boyScoutIDField	= new JTextField();
+		final JTextField unitTypeField = new JTextField();
+		final JTextField unitNumberField = new JTextField();
 		
 		JButton acceptButton = new JButton("Accept");
 		JButton clearButton = new JButton("Clear");
@@ -139,10 +139,10 @@ public class GuiMain {
 		
 		
 		//Edit Members
-		JFrame searchResults = new JFrame();
+		final JFrame searchResults = new JFrame();
 		JPanel buttonPanel2 = new JPanel();
 		JLabel infoPrompt = new JLabel("Please enter a name to search");
-		JTextField infoPromptField = new JTextField();
+		final JTextField infoPromptField = new JTextField();
 		JButton goButton = new JButton("Go");
 		JButton clearButton2 = new JButton("Clear");
 		JPanel searchResultsPanel = new JPanel(new GridLayout (0,1));
