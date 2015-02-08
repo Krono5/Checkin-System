@@ -46,6 +46,8 @@ public class GuiMain {
 		JLabel boyScoutIDLabel = new JLabel("BSA ID");
 		JLabel unitTypeLabel = new JLabel("Unit Type");
 		JLabel unitNumberLabel = new JLabel("Unit Number");
+		JLabel nameLabel = new JLabel("Name");
+		JLabel oAIDLabel = new JLabel("Order of the Arrow ID");
 		
 		
 		JComboBox jobAssignmentBox = new JComboBox();
@@ -57,6 +59,9 @@ public class GuiMain {
 		final JTextField boyScoutIDField	= new JTextField();
 		final JTextField unitTypeField = new JTextField();
 		final JTextField unitNumberField = new JTextField();
+		final JTextField nameField = new JTextField();
+		final JTextField oAIDField = new JTextField();
+		
 		
 		JButton acceptButton = new JButton("Accept");
 		JButton clearButton = new JButton("Clear");
@@ -72,6 +77,10 @@ public class GuiMain {
 		personalPanel.add(healthFormBox);
 		
 		personalPanel.add(verifyInfo);
+		
+		personalPanel.add(nameLabel);
+		personalPanel.add(nameField);
+		
 		personalPanel.add(dateOfBirthLabel);
 		personalPanel.add(dateOfBirthField);
 		
@@ -87,6 +96,10 @@ public class GuiMain {
 		personalPanel.add(unitNumberLabel);
 		personalPanel.add(unitNumberField);
 		
+		personalPanel.add(oAIDLabel);
+		personalPanel.add(oAIDField);
+		
+		
 		personalPanel.add(buttonPanel);
 		buttonPanel.add(acceptButton);
 		buttonPanel.add(clearButton);
@@ -96,8 +109,8 @@ public class GuiMain {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				//TODO Change output function
-				System.out.println("Test1");
+
+				
 				
 			}
 		});
