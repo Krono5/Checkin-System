@@ -7,18 +7,10 @@ import org.w3c.dom.NodeList;
 import api.Event;
 
 public class Events {
-<<<<<<< HEAD
 	public static Event getAll(String authentication){
 		String eventSigninEventsId = "";
 		Node loginXMLObj = XMLHandler.parseString(WebRequest.send(WebRequest.WEB_URL + "&token=" + authentication, new HashMap<String, String>(), "", "POST"));
 		Node[] output = XMLHandler.getNodes(loginXMLObj, "apiHandlers handler");
-=======
-	public static Event getAll(){
-		String targetURL = "http://octoraro22.org/eventsignin/index.php?api=1";
-		HashMap<String, String> requestProperties = new HashMap<String, String>();
-		String urlParameters = "";
-		String method = "POST";
->>>>>>> branch 'master' of https://github.com/Krono5/Checkin-System.git
 		
 		if(output != null){
 			for(int x = 0; x < output.length; x++){
