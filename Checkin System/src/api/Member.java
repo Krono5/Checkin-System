@@ -5,8 +5,8 @@ import java.util.Date;
 public class Member {
 	private String memberName;
 	private Date dateOfBirth;
-	private Integer oAID;
-	private Integer bSAID;
+	private String oAID;
+	private String bSAID;
 	private String emailAddress;
 	private String unitType;
 	private Integer unitNumber;
@@ -23,8 +23,8 @@ public class Member {
 		this.bSAID = null;
 	}
 
-	public Member(String memberName, Date dateOfBirth, Integer oAID,
-			Integer bSAID, String emailAddress, String unitType, Integer unitNumber, boolean healthForm, String jobAssignment, String sleepingLocation) {
+	public Member(String memberName, Date dateOfBirth, String oAID,
+			String bSAID, String emailAddress, String unitType, Integer unitNumber, boolean healthForm, String jobAssignment, String sleepingLocation) {
 		memberName = this.memberName;
 		dateOfBirth = this.dateOfBirth;
 		oAID = this.oAID;
@@ -54,19 +54,19 @@ public class Member {
 		this.dateOfBirth = dateOfBirth;
 	}
 
-	public Integer getoAID() {
+	public String getoAID() {
 		return oAID;
 	}
 
-	public void setoAID(Integer oAID) {
+	public void setoAID(String oAID) {
 		this.oAID = oAID;
 	}
 
-	public Integer getbSAID() {
+	public String getbSAID() {
 		return bSAID;
 	}
 
-	public void setbSAID(Integer bSAID) {
+	public void setbSAID(String bSAID) {
 		this.bSAID = bSAID;
 	}
 
