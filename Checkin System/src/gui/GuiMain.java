@@ -14,6 +14,7 @@ import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 import javax.swing.JTextField;
 import javax.swing.SpringLayout;
+import api.DatePicker;
 
 public class GuiMain {
 
@@ -64,6 +65,7 @@ public class GuiMain {
 		
 		JButton acceptButton = new JButton("Accept");
 		JButton clearButton = new JButton("Clear");
+		JButton dateInput = new JButton("Select Date");
 		
 		
 		personalPanel.add(jobAssignmentLabel);
@@ -81,6 +83,7 @@ public class GuiMain {
 		personalPanel.add(nameField);
 		
 		personalPanel.add(dateOfBirthLabel);
+		personalPanel.add(dateInput);
 		personalPanel.add(dateOfBirthField);
 		
 		personalPanel.add(emailAddressLabel);
@@ -102,6 +105,19 @@ public class GuiMain {
 		personalPanel.add(buttonPanel);
 		buttonPanel.add(acceptButton);
 		buttonPanel.add(clearButton);
+		
+		// Date Picker
+		dateInput.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent arg0){
+				final JFrame f = new JFrame();
+				f.setLocationRelativeTo(null);
+				f.pack();
+				f.setLocationRelativeTo(null);
+				f.setVisible(true);
+				dateOfBirthField.setText(new DatePicker(f).setPickedDate());
+				f.setVisible(false);
+			}
+		});
 		
 		//Button action assignments
 		acceptButton.addActionListener(new ActionListener() {
@@ -250,6 +266,7 @@ public class GuiMain {
 	
 		frame.add(pane);
 		frame.pack();
+		frame.setLocationRelativeTo(null);
 		frame.setSize(450, 720);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
