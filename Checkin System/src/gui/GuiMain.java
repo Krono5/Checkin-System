@@ -250,6 +250,7 @@ public class GuiMain {
 	
 		frame.add(pane);
 		frame.pack();
+		frame.setSize(450, 720);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
 		
